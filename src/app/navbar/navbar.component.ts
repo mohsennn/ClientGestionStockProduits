@@ -10,7 +10,8 @@ export class NavbarComponent implements OnInit {
   showSideBar: boolean;
   /**le but de */
   @Output()
-   showSideBarChange: EventEmitter<boolean> = new EventEmitter<boolean>();
+  showSideBarChange: EventEmitter<boolean> = new EventEmitter<boolean>();
+
   constructor() {}
 
   ngOnInit() {}
