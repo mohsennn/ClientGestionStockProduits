@@ -3,8 +3,8 @@
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
-    "start": "ng serve",
-    "build": "ng build",
+    "start": "ng serve --proxy-config proxy.conf.json",
+    "build.local": "ng build --env=local --prod --base-href /ClientGestionStockProduits/ && mkdir \"dist/WEB-INF\" && xcopy \"config/WEB-INF\" \"dist/WEB-INF\"",
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e"
@@ -26,6 +26,7 @@
     "core-js": "^2.5.4",
     "font-awesome": "^4.7.0",
     "jquery": "^3.2.1",
+    "ngx-cookie-service": "^2.2.0",
     "popper.js": "^1.12.5",
     "rxjs": "~6.3.3",
     "zone.js": "~0.8.26"
